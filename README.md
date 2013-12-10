@@ -2,7 +2,7 @@ MIS System for students for thesis (On - Progress Development)
 
 Ingredients:
 
-- PHP 3.x, 4.x, 5.x
+- PHP 5.3.x, 5.4.x 
 - MongoDB
 - rockmongo
 - Twitter bootstrap
