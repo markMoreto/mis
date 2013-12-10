@@ -1,4 +1,4 @@
-MIS System for students
+MIS System for students for thesis (On - Progress Development)
 
 Ingredients:
 
