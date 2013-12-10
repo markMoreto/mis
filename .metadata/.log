@@ -1,0 +1,9 @@
+!SESSION 2013-12-07 22:54:42.438 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-07 22:56:37.395
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
