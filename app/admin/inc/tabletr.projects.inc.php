@@ -2,23 +2,6 @@
 	if (!isset($projectExist)) {
 		die("Cannot access this file directly");
 	}
-	/**
-	 * {
-  "budget": "3,123,123.00",
-  "client_id": "zayala",
-  "engineer": "Zobel Ayala",
-  "project_address": "101 St. Burgundy Tower, Ayala, Makati City",
-  "project_id": "1",
-  "project_name": "Burgundy Tower",
-  "remarks": "Executive Project in Ayala, Makati",
-  "status": "approved",
-  "supply_id": "1",
-  "team_id": "1",
-  "timeline_id": "1"
-}
-	 * 
-	 * 	Project Name	Engineer / Manager	Client	 Timeline	Status
-	 */
 ?>
 <tr>
 	<td class="center">
@@ -29,9 +12,38 @@
 	</td>
 
 	<td>
-		<a href="reports/?project=<?php echo $projectExist["project_name"]; ?>" target="_blank">
-			<?php echo $projectExist["project_name"]; ?>
-		</a>
+		<form action="print.projects.php" method="post" target="_blank">
+			<!-- hidden values of form fields here -->
+			<?php 
+			//TODO:
+			//Change budget format to pure digit for JS quantity price calc
+			//check material id
+			//
+				// $projectExist - project tb
+				// $profileResult - engineer profile 
+				// $profileResultcli - Client profile
+				// $timelineResult - timeline tb
+
+			?>
+			<input name="project_id" value="" class="hidden" />
+			<input name="project_budget" value="" class="hidden" />
+			<input name="project_name" value="" class="hidden" />
+			<input name="project_address" value="" class="hidden" />
+			<input name="project_status" value="" class="hidden" />
+			<input name="project_remarks" value="" class="hidden" />
+			<input name="engr_fullname" value="" class="hidden" />
+			<input name="cli_fullname" value="" class="hidden" />
+			<input name="cli_email" value="" class="hidden" />
+			<input name="cli_remarks" value="" class="hidden" />
+			<input name="timeline_start" value="" class="hidden" />
+			<input name="timeline_end" value="" class="hidden" />
+
+			<button class="btn" type="submit">
+				<i class="icon-print"></i>
+			</button>
+				<?php echo $projectExist["project_name"]; ?>
+
+		</form>
 	</td>
 	<td><?php echo $profileResult["first_name"] . " " . $profileResult["last_name"]; ?></td>
 	<td class="hidden-480"><?php echo $profileResultcli["first_name"] . " " . $profileResultcli["last_name"]; ?></td>

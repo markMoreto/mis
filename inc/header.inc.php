@@ -1,13 +1,14 @@
 <?php 
 	session_start();
 	$name = basename($_SERVER['REQUEST_URI'],".php"); 
-	if (!isset($_SESSION['username'])) {
+	if (!isset($_SESSION['username']) || !isset($_GET['user'])) {
 		header("location: ../../");
+	}else{
+		
+		include 'connection.inc.php';
+		
+		$_SESSION['currentuser'] = $_GET['user'];
 	}
-	
-	include 'connection.inc.php';
-	
-	$_SESSION['currentuser'] = $_GET['user'];
 ?>
 
 <!DOCTYPE html>
