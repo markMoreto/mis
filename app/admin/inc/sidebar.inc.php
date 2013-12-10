@@ -72,7 +72,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="print.materials.php">
+									<a href="print.materials.php?print=yes">
 										<i class="icon-double-angle-right"></i>
 										Materials
 									</a>

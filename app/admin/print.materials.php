@@ -15,7 +15,7 @@
 	
 	<head>
 		<meta charset="utf-8" />
-		<title><?php echo strtoupper($name);  ?> - PHILCONSPECS</title>
+		<title>Material Supply Report - PHILCONSPECS</title>
 
 		<meta name="description" content="overview &amp; stats" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,9 +80,13 @@
 
 				<div class="row">
 					<div class="col-xs-12">
-						<h3 class="header smaller lighter blue">Project Materials</h3>
+						<h3 class="header smaller lighter blue">Project Supply Materials</h3>
+						<button class="btn btn-app btn-light btn-xs" onclick="window.print()">
+							<i class="icon-print"></i>
+							Print
+						</button>
 						<div class="table-header">
-							All Materials listed - - <button onclick="window.print()">PRINT THIS PAGE</button>
+							All Materials listed and other details
 						</div>
 
 						<div class="table-responsive">
@@ -97,11 +101,11 @@
 										</th>
 										<th>Item Code</th>
 										<th>Item Name</th>
-										<th class="hidden-480">Real time Stocks</th>
+										<th class="hidden-480">Quantity Stocks</th>
 										<th>Supplier</th>
 										<th class="hidden-480">Status</th>
 
-										<th>Action</th>
+										
 									</tr>
 								</thead>
 

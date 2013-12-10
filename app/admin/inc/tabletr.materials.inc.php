@@ -5,6 +5,7 @@
 
 ?>
 <tr>
+
 	<td class="center">
 		<label>
 			<input type="checkbox" class="ace materialschk" />
@@ -37,7 +38,7 @@
 			}
 		?>
 	</td>
-
+		<?php if(!isset($_GET['print'])){ ?>
 	<td>
 		<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
 			<a class="green" href="#">
@@ -83,4 +84,5 @@
 			</div>
 		</div>
 	</td>
+		<?php } ?>
 </tr>
