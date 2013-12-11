@@ -25,19 +25,20 @@
 				// $timelineResult - timeline tb
 
 			?>
-			<input name="project_id" value="" class="hidden" />
-			<input name="project_budget" value="" class="hidden" />
-			<input name="project_name" value="" class="hidden" />
-			<input name="project_address" value="" class="hidden" />
-			<input name="project_status" value="" class="hidden" />
-			<input name="project_remarks" value="" class="hidden" />
-			<input name="engr_fullname" value="" class="hidden" />
-			<input name="cli_fullname" value="" class="hidden" />
-			<input name="cli_email" value="" class="hidden" />
-			<input name="cli_remarks" value="" class="hidden" />
-			<input name="timeline_start" value="" class="hidden" />
-			<input name="timeline_end" value="" class="hidden" />
-
+			<input name="project_id" value="<?php echo  $projectExist['project_id']; ?>" class="hidden" />
+			<input name="project_budget" value="<?php echo  $projectExist['budget']; ?>" class="hidden" />
+			<input name="project_name" value="<?php echo  $projectExist['project_name']; ?>" class="hidden" />
+			<input name="project_address" value="<?php echo  $projectExist['project_address']; ?>" class="hidden" />
+			<input name="project_status" value="<?php echo  $projectExist['status']; ?>" class="hidden" />
+			<input name="project_remarks" value="<?php echo  $projectExist['remarks']; ?>" class="hidden" />
+			<input name="engr_fullname" value="<?php echo  $profileResult["first_name"] . " " . $profileResult["last_name"]; ?>" class="hidden" />
+			<input name="cli_fullname" value="<?php echo  $profileResultcli["first_name"] . " " . $profileResultcli["last_name"]; ?>" class="hidden" />
+			<input name="cli_email" value="<?php echo  $profileResultcli['email']; ?>" class="hidden" />
+			<input name="cli_phone" value="<?php echo  $profileResultcli['contact_number']; ?>" class="hidden" />
+			<input name="cli_remarks" value="<?php echo  $profileResultcli['remarks']; ?>" class="hidden" />
+			<input name="timeline_start" value="<?php echo  $timelineResult["date_start"]; ?>" class="hidden" />
+			<input name="timeline_end" value="<?php echo  $timelineResult["date_end"]; ?>" class="hidden" />
+			<!-- missing team -->
 			<button class="btn" type="submit">
 				<i class="icon-print"></i>
 			</button>

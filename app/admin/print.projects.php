@@ -7,15 +7,22 @@
 	
 	include '../../inc/connection.inc.php';
 	
-	//$_SESSION['currentuser'] = $_GET['user'];
-	//
-	//die(var_dump($_POST));
-	//
-	//
-	//// $projectExist - project tb
-// $profileResult - engineer profile 
-// $profileResultcli - Client profile
-// $timelineResult - timeline tb
+	if(!isset($dbconnection)){
+		die("No database connection");
+	}
+	
+	
+	if(!isset($_POST) || !isset($_POST['project_id'])){
+		die("No data to print");
+	}
+	/*
+	//get materials
+	$tbMATERIAL = $dbconnection->mis->material;
+	$projectMaterials = $dbconnection->mis->project->find(array("project_id" => new MongoId($_POST['project_id'])));
+	if($projectMaterials->hasNext()){
+		$project = $projectMaterials->getNext();
+	}
+	 * */
 ?>
 
 <!DOCTYPE html>
@@ -97,11 +104,11 @@
 
 												<div class="widget-toolbar no-border invoice-info">
 													<span class="invoice-info-label">Date Started:</span>
-													<span class="red">#121212</span>
+													<span class="red"><?php echo date("m/d/Y",strtotime($_POST['timeline_start'])); ?></span>
 
 													<br />
 													<span class="invoice-info-label">Date End:</span>
-													<span class="blue">03/03/2013</span>
+													<span class="blue"><?php echo date("m/d/Y",strtotime($_POST['timeline_end'])); ?></span>
 												</div>
 
 												<div class="widget-toolbar hidden-480">
@@ -126,25 +133,25 @@
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Budget:
-																		<b class="red">3,123,123.00</b>
+																		<b class="red" id="budget"><?php echo $_POST['project_budget']; ?></b>
 																	</li>
 
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Project Name:
-																		<b class="red">Burgundy Tower</b>
+																		<b class="red"><?php echo $_POST['project_name']; ?></b>
 																	</li>
 
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Project Address location:
-																		<b class="red">101 St. Burgundy Tower, Ayala, Makati City</b>
+																		<b class="red"><?php echo $_POST['project_address']; ?></b>
 																	</li>
 
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Project Status:
-																		<b class="red">Approved</b>
+																		<b class="red"><?php echo $_POST['project_status']; ?></b>
 																	</li>
 
 																	<li class="divider"></li>
@@ -152,14 +159,15 @@
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Engineer Assigned:
-																		<b class="red">Engr. Joel Cruz</b>
+																		<b class="red"><?php echo $_POST['engr_fullname']; ?></b>
 																	</li>
-
+																	<!--
 																	<li>
 																		<i class="icon-caret-right blue"></i>
 																		Team Assigned:
-																		<b class="red">Fast Worker</b>
+																		<b class="red"></b>
 																	</li>
+																	-->
 																</ul>
 															</div>
 														</div><!-- /span -->
@@ -176,19 +184,19 @@
 																	<li>
 																		<i class="icon-caret-right green"></i>
 																		Full Name:
-																		<b class="red">Bill Gates</b>
+																		<b class="red"><?php echo $_POST['cli_fullname']; ?></b>
 																	</li>
 
 																	<li>
 																		<i class="icon-caret-right green"></i>
 																		Email:
-																		<b class="red">bgates@hotmail.com</b>
+																		<b class="red"><?php echo $_POST['cli_email']; ?></b>
 																	</li>
 
 																	<li>
 																		<i class="icon-caret-right green"></i>
 																		Contact Info:
-																		<b class="red">+63 (918) 444-4444</b>
+																		<b class="red">+63 <?php echo $_POST['cli_phone']; ?></b>
 																	</li>
 
 																	<li class="divider"></li>
@@ -206,10 +214,11 @@
 													<div class="space"></div>
 
 													<div>
+														<h4>Required Materials: </h4>
 														<table class="table table-striped table-bordered">
 															<thead>
 																<tr>
-																	<th class="center">Qty</th>
+																	<th>Qty</th>
 																	<th>Material</th>
 																	<th class="hidden-xs">Supplier</th>
 																	<th class="hidden-480">Item Code</th>
@@ -218,18 +227,54 @@
 															</thead>
 
 															<tbody>
-																<tr>
-																	<td class="center">140</td>
-
-																	<td>
-																		4x4 Plywood
-																	</td>
-																	<td class="hidden-xs">
-																		Ace Hardware
-																	</td>
-																	<td class="hidden-480"> ply44 </td>
-																	<td>200,000 PHP</td>
-																</tr>
+																<?php 
+																	$total = "₱ 350,000.00";
+																	$materials = 
+																	array(
+																		0 => array(0 => "140", 1 => "4x4 Plywood", 2 => "Ace Hardware", 3 => "ply44", 4 => "200,000 PHP"),
+																		1 => array(0 => "140", 1 => "2x2 Plywood", 2 => "Ace Hardware", 3 => "ply22", 4 => "100,000 PHP"),
+																		2 => array(0 => "12", 1 => "Steel Hammer", 2 => "China Asian Supply", 3 => "stlmmr", 4 => "30,000 PHP"),
+																		3 => array(0 => "1", 1 => "Iron Jack Hammer", 2 => "China Asian Supply", 3 => "ijmmr", 4 => "20,000 PHP")
+																	);
+																	if($_POST['project_id'] == "52a52145925b20b26e7b23c8"){
+																		$total = "₱ 1,708,675.00";
+																		$materials = 
+																		array(
+																			0 => array(0 => "10", 1 => "Shingles", 2 => "China Asian Supply", 3 => "shng", 4 => "165,000 PHP"),
+																			1 => array(0 => "21", 1 => "Plywood Sheets", 2 => "Ace Hardware", 3 => "ply22", 4 => "143,675 PHP"),
+																			2 => array(0 => "164", 1 => "Gutter Downspouts", 2 => "China Asian Supply", 3 => "gutter", 4 => "1,000,000 PHP"),
+																			3 => array(0 => "500", 1 => "Chimney Sleeve", 2 => "China Asian Supply", 3 => "sleeve", 4 => "400,000 PHP")
+																		);
+																	}
+																	
+																	if($_POST['project_id'] == "52a51e2b925b2060577b23c9"){
+																		$total = "₱ 10,162,100.00";
+																		$materials = 
+																		array(
+																			0 => array(0 => "1000", 1 => "Concret Nails", 2 => "Ace Hardware", 3 => "nails", 4 => "100 PHP"),
+																			1 => array(0 => "17", 1 => "2 x 4 board", 2 => "Ace Hardware", 3 => "board24", 4 => "12,000 PHP"),
+																			2 => array(0 => "10", 1 => "Fire wall steel", 2 => "Ace Hardware", 3 => "wall", 4 => "10,000,000 PHP"),
+																			3 => array(0 => "550", 1 => "4 x 4 board", 2 => "Ace Hardware", 3 => "board44", 4 => "150,000 PHP")
+																		);
+																	}
+																	
+																	if($_POST['project_id'] == "1"){
+																		
+																	}
+																?>
+																
+																<?php 
+																	foreach($materials as $material => $id){
+																			echo "<tr>";
+																		foreach ($id as $key => $value) {
+																		
+																			echo "<td>{$value}</td>";
+														
+																		}
+																		echo "</tr>";
+																	}
+																	//die("end test");
+																?>
 															</tbody>
 														</table>
 													</div>
@@ -239,17 +284,16 @@
 													<div class="row">
 														<div class="col-sm-5 pull-right">
 															<h4 class="pull-right">
-																Total amount :
-																<span class="red">$395</span>
+																Materials total cost :
+																<span class="red"><?php echo $total; ?></span>
 															</h4>
 														</div>
-														<div class="col-sm-7 pull-left"> Extra Information </div>
+														<div class="col-sm-7 pull-left"> </div>
 													</div>
 
 													<div class="space-6"></div>
 													<div class="well">
-														Thank you for choosing Ace Company products.
-					We believe you will be satisfied by our services.
+														APPROVED BY: ______________________________ 
 													</div>
 												</div>
 											</div>
@@ -298,6 +342,8 @@
 		</script>
 		<script src="../../assets/js/bootstrap.min.js"></script>
 		<script src="../../assets/js/typeahead-bs2.min.js"></script>
+		
+		<script src="../../assets/js/currency/jQuery-Currency/jquery.currency.js"></script>
 
 		<!-- page specific plugin scripts -->
 
@@ -307,5 +353,16 @@
 		<script src="../../assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function(){
+				jQuery("b#budget").currency({
+					region: 'PHP', // The 3 digit ISO code you want to display your currency in
+				    thousands: ',', // Thousands separator
+				    decimal: '.',   // Decimal separator
+				});
+			
+				jQuery("b#budget").currency();
+			});
+		</script>
 	</body>
 </html>
