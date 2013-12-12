@@ -60,7 +60,7 @@
 															<i class="icon-time bigger-110 hidden-480"></i>
 															Last Time-In
 														</th>
-														<th class="hidden-480">Age</th>
+														<th class="hidden-480">User Type</th>
 
 														<th>Action</th>
 													</tr>
@@ -103,6 +103,7 @@
 															$uaresult = $db->ua->find(array('ua_id' => $accountExist["ua_id"]));
 
 															if($uaresult->hasNext()){
+																$uaresult = $uaresult->getNext();
 																$teamResult = $db->team->find(array('team_id' => $accountExist["team_id"]));
 																if ( $teamResult->hasNext() ){
 																	$teamResult = $teamResult->getNext();
@@ -221,9 +222,9 @@
 														</th>
 														<th>Item Code</th>
 														<th>Item Name</th>
-														<th class="hidden-480">Real time Stocks</th>
+														<th class="hidden-480">Unit Stocks</th>
 														<th>Supplier</th>
-														<th class="hidden-480">Status</th>
+														<th class="hidden-480">Price per Unit</th>
 
 														<th>Action</th>
 													</tr>

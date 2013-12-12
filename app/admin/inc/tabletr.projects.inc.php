@@ -38,6 +38,7 @@
 			<input name="cli_remarks" value="<?php echo  $profileResultcli['remarks']; ?>" class="hidden" />
 			<input name="timeline_start" value="<?php echo  $timelineResult["date_start"]; ?>" class="hidden" />
 			<input name="timeline_end" value="<?php echo  $timelineResult["date_end"]; ?>" class="hidden" />
+			<input name="project_team" value="<?php echo  $projectExist["team_id"]; ?>" class="hidden" />
 			<!-- missing team -->
 			<button class="btn" type="submit">
 				<i class="icon-print"></i>
@@ -50,7 +51,7 @@
 	<td class="hidden-480"><?php echo $profileResultcli["first_name"] . " " . $profileResultcli["last_name"]; ?></td>
 	<td>
 		<?php 
-				echo "<b>From:</b> " . $timelineResult["date_start"] . "| <b>To:</b> " . $timelineResult["date_end"];
+			echo "<b>From:</b> <span class='label label-info arrowed-right arrowed-in'>" . $timelineResult["date_start"] . "</span> <b>To:</b> <span class='label label-danger arrowed'>" . $timelineResult["date_end"] . "</span>";
 		?>
 	</td>
 
@@ -66,7 +67,7 @@
 				<i class="icon-pencil bigger-130"></i>
 			</a>
 
-			<a class="red" href="#">
+			<a class="delete red" id="<?php echo $projectExist["project_id"]; ?>" table="project" col="project_id" match="<?php echo $projectExist["project_id"]; ?>">
 				<i class="icon-trash bigger-130"></i>
 			</a>
 		</div>

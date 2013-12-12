@@ -1,4 +1,6 @@
 <?php 
+	date_default_timezone_set('Asia/Manila');
+	
 	session_start();
 	$name = basename($_SERVER['REQUEST_URI'],".php"); 
 	if (!isset($_SESSION['username']) || !isset($_GET['user'])) {

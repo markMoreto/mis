@@ -41,6 +41,7 @@
 
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
+		<script src="../../assets/js/currency/jQuery-Currency/jquery.currency.js"></script>
 
 		<!--[if lte IE 8]>
 		  <script src="../../assets/js/excanvas.min.js"></script>
@@ -55,6 +56,18 @@
 		<script src="../../assets/js/flot/jquery.flot.pie.min.js"></script>
 		<script src="../../assets/js/flot/jquery.flot.resize.min.js"></script>
 
+		
+		<script type="text/javascript">
+			jQuery(function(){
+
+				jQuery(".priceperunit").currency({
+					region: 'PHP', // The 3 digit ISO code you want to display your currency in
+				    thousands: ',', // Thousands separator
+				    decimal: '.',   // Decimal separator
+				});
+			});
+		</script>
+
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			//user tables
@@ -68,7 +81,9 @@
 				
 
 				jQuery("a.delete").on('click' , function(){
-					var table = $(this).attr("table");
+					var ask = confirm("Deleting is not advisable as it may cause problems in Existing Project(s). Click ok to DELETE, cancel if you don't.");
+					if(ask == true){
+						var table = $(this).attr("table");
 						if(table.indexOf("|") != -1){
 							table = table.split("|");
 						}
@@ -93,6 +108,8 @@
 					     		alert("Something went wrong in AJAX call in creating material. Error Message: " + msg);
 					        }
 						});
+					}
+
 				});
 
 				

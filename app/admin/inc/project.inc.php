@@ -12,14 +12,14 @@
 		die("No database connection");
  	}
 	
-	//die(var_dump($_POST));
+	//die(var_dump($_POST['materials']));
 	
 	$dbmis = $dbconnection->mis;
 	
 	//sanitation
-	 foreach($_POST as $var){
-		strip_tags($var);
-	 }
+	 //foreach($_POST as $var){
+	//	strip_tags($var);
+	 //}
 	 
 	 
 	$tbtimeline = $dbmis->timeline;

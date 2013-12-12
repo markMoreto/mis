@@ -29,13 +29,9 @@
 		?>
 	</td>
 
-	<td class="hidden-480">
+	<td class="priceperunit">
 		<?php 
-			if((integer)$materialExist["quantity"] < 0){
-				echo "Out of Stock";
-			}else{
-				echo "In-Stock";
-			}
+			echo $materialExist["price_of_quantity"] * 0.01;
 		?>
 	</td>
 		<?php if(!isset($_GET['print'])){ ?>

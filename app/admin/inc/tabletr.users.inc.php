@@ -24,6 +24,7 @@
 			}
 		?>
 	</td>
+	
 	<td>
 		<?php 
 			if($timeResult == "-"){
@@ -34,9 +35,24 @@
 		?>
 	</td>
 
-	<td class="hidden-480">
+	<td class="hidden-480"> 
 		<?php 
-			echo (date("Y") - substr($accountExist["birth_date"], 0, 4)); 
+			$type = array("System Admin", "Client", "Engineer", "Project Manager", "HR Manager", "Custodian", "Worker");
+			if($uaresult['ua_level'] == "A"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[0]."</span>";
+			} else if($uaresult['ua_level'] == "cli"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[1]."</span>";
+			} else if($uaresult['ua_level'] == "E"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[2]."</span>";
+			} else if($uaresult['ua_level'] == "P"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[3]."</span>";
+			} else if($uaresult['ua_level'] == "H"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[4]."</span>";
+			} else if($uaresult['ua_level'] == "C"){
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[5]."</span>";
+			} else {
+				echo "<span class='label label-success arrowed-in arrowed-in-right'>".$type[6]."</span>";
+			}
 		?>
 	</td>
 
@@ -46,9 +62,15 @@
 				<i class="icon-pencil bigger-130"></i>
 			</a>
 
-			<a class="delete red" id="<?php echo $accountExist["ua_id"]; ?>" table="ua" col="ua_id" match="<?php echo $accountExist["ua_id"]; ?>">
-				<i class="icon-trash bigger-130"></i>
-			</a>
+			<?php 
+				if ($accountExist["ua_id"] == "1") {
+					echo "Cannot delete yourself.";
+				} else {
+			?>
+				<a class="delete red" id="<?php echo $accountExist["ua_id"]; ?>" table="ua" col="ua_id" match="<?php echo $accountExist["ua_id"]; ?>">
+					<i class="icon-trash bigger-130"></i>
+				</a>
+			<?php } ?>
 		</div>
 
 		<!-- RESERVED -->

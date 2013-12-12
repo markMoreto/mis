@@ -92,18 +92,6 @@
 																</div>
 
 																<div class="space-2"></div>
-																
-																<div class="form-group">
-																	<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Price of input Quantity:</label>
-
-																	<div class="col-xs-12 col-sm-9">
-																		<div class="clearfix">
-																			<input type="text" name="price" id="price" />
-																		</div>
-																	</div>
-																</div>
-
-																<div class="space-2"></div>
 
 																<div class="form-group">
 																		<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password2">Quantity:</label>
@@ -120,6 +108,21 @@
 																			</div>
 																		</div>
 																</div>
+
+
+																<div class="space-2"></div>
+																
+																<div class="form-group">
+																	<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Price of selected Quantity:</label>
+
+																	<div class="col-xs-12 col-sm-9">
+																		<div class="clearfix">
+																			<input type="text" name="price" id="price" />
+																		</div>
+																	</div>
+																</div>
+
+																
 
 															
 																
@@ -397,6 +400,10 @@
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
+			function forceNumeric() {
+    			this.value = this.value.replace(/\D/g, '');
+			}
+
 			jQuery(function($) {
 			
 				$('[data-rel=tooltip]').tooltip();
@@ -407,6 +414,8 @@
 				}); 
 			
 			
+				$('#price').keyup(forceNumeric).change(forceNumeric).click(forceNumeric);
+
 				var $validation = false;
 				$('#fuelux-wizard').ace_wizard().on('change' , function(e, info){
 					if(info.step == 1 && $validation) {

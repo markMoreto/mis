@@ -236,7 +236,7 @@
 																				<tr>
 																					<th class="center">
 																						<label>
-																							<input type="checkbox" class="ace" />
+																							<!--<input type="checkbox" class="ace" />-->
 																							<span class="lbl"></span>
 																						</label>
 																					</th>
@@ -486,6 +486,10 @@
 		<script src="assets/js/jquery.dataTables.bootstrap.js"></script>
 
 		<script type="text/javascript">
+			function forceNumeric() {
+    			this.value = this.value.replace(/\D/g, '');
+			}
+
 			//user tables
 			jQuery(function($) {
 				var oTable1 = $('#materialstb').dataTable( {
@@ -495,6 +499,7 @@
 				  { "bSortable": false }
 				] } );
 				
+				$('#budget').keyup(forceNumeric).change(forceNumeric).click(forceNumeric);
 				
 				$('table th input:checkbox').on('click' , function(){
 					var that = this;
@@ -504,6 +509,15 @@
 						$(this).closest('tr').toggleClass('selected');
 					});
 						
+				});
+
+				//$('#skip-validation').trigger("click");
+				$('#skip-validation').on('click' , function(){
+					if($('#hidemelater').is(":visible")){
+						$('#hidemelater').hide();
+					}else{
+						$('#hidemelater').show();
+					}
 				});
 			
 			
@@ -540,14 +554,17 @@
 					}
 				}).on('finished', function(e) {
 					var materials = $('.materialschk:checkbox:checked');
-					var materialsWithPrice = [];
+					var materialsWithQty = [];
 					var tmp;
 					
 					for(var i=0;i<materials.length;i++){
 						tmp = materials[i].value;
-						materialsWithPrice.push({"material_id": tmp, "quantity": $("#"+tmp).val()});
+						materialsWithQty.push({"material_id": tmp, "quantity": $("#"+tmp).val()});
 					}
+
+					//console.log(materialsWithQty);
 					
+				
 					var data = {
 						name: $("#name").val(),
 						budget: $("#budget").val(),
@@ -558,7 +575,7 @@
 						team: $("#team").val(),
 						engr: $("#engr").val(),
 						cli: $("#cli").val(),
-						materials: materialsWithPrice,
+						materials: materialsWithQty,
 						comment: $("#comment").val()
 					};
 					
@@ -576,7 +593,7 @@
 				     		alert("Something went wrong in AJAX call in creating material. Error Message: " + msg);
 				        }
 					});				
-
+					
 					bootbox.dialog({
 						message: "Thank you! Information was successfully saved!", 
 						buttons: {
@@ -600,6 +617,13 @@
 					else {
 						$('#validation-form').addClass('hide');
 						$('#sample-form').show();
+					}
+				});
+
+				$('.materialschk').on('click' , function(){
+					var qty = this.value;
+					if($("#"+qty).val() === "0"){
+						alert("Please input Desire Quantity");
 					}
 				});
 			
@@ -669,13 +693,7 @@
 				},1000);  //1 second
 			
 				
-				$('#skip-validation').click(function(){
-					if($('#hidemelater').is(":visible")){
-						$('#hidemelater').hide();
-					}else{
-						$('#hidemelater').show();
-					}
-				});
+			
 				
 			})
 		</script>

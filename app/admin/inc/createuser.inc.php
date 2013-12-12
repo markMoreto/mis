@@ -54,6 +54,7 @@
 		  "date_created"=> date("Y-m-d H:m:s"),
 		  "first_name"=> $_POST['fname'],
 		  "gender"=> $_POST['gender'],
+		  "email"=> $_POST['email'],
 		  "gov_id"=> array("sss"=> $_POST['sss'],"tin"=>$_POST['tin']),
 		  "img_name"=> "",
 		  "last_name"=> $_POST['lname'],

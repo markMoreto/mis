@@ -220,6 +220,7 @@
 
 		
 		<script type="text/javascript">
+			//console.log("<?php echo '40,000' * 0.01; ?>");
 			jQuery("#logmein").click(function(){
 				var username = jQuery(".username");
 				var password = jQuery(".password");

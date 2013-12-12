@@ -66,12 +66,6 @@
 							</a>
 							<ul class="submenu" style="display: block;">
 								<li>
-									<a href="profile.html">
-										<i class="icon-double-angle-right"></i>
-										Projects
-									</a>
-								</li>
-								<li>
 									<a href="print.materials.php?print=yes">
 										<i class="icon-double-angle-right"></i>
 										Materials

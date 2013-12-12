@@ -15,14 +15,8 @@
 	if(!isset($_POST) || !isset($_POST['project_id'])){
 		die("No data to print");
 	}
-	/*
-	//get materials
-	$tbMATERIAL = $dbconnection->mis->material;
-	$projectMaterials = $dbconnection->mis->project->find(array("project_id" => new MongoId($_POST['project_id'])));
-	if($projectMaterials->hasNext()){
-		$project = $projectMaterials->getNext();
-	}
-	 * */
+
+	$dbmis = $dbconnection->mis;
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +97,7 @@
 												</h3>
 
 												<div class="widget-toolbar no-border invoice-info">
-													<span class="invoice-info-label">Date Started:</span>
+													<span class="invoice-info-label">Date Start:</span>
 													<span class="red"><?php echo date("m/d/Y",strtotime($_POST['timeline_start'])); ?></span>
 
 													<br />
@@ -161,6 +155,22 @@
 																		Engineer Assigned:
 																		<b class="red"><?php echo $_POST['engr_fullname']; ?></b>
 																	</li>
+
+																	<?php
+																		if(isset($_POST['project_team'])){
+																			$find = $dbmis->team->find(array('team_id' => $_POST['project_team'])); //team is not wrapped in mongo id
+																			if($find->hasNext()){
+																				$result = $find->getNext();
+
+																				echo "<li>";
+																				echo "<i class='icon-caret-right blue'></i>";
+																				echo "Team Assigned: ";
+																				echo " <b class='red'>".$result['team_name']."</b>";
+																				echo "</li>";
+																			}
+																		}
+																	?>
+
 																	<!--
 																	<li>
 																		<i class="icon-caret-right blue"></i>
@@ -200,12 +210,16 @@
 																	</li>
 
 																	<li class="divider"></li>
-
+																	
+																	<?php
+																		if(isset($_POST['cli_remarks']) && !empty($_POST['cli_remarks'])){
+																	?>
 																	<li>
 																		<i class="icon-caret-right green"></i>
 																		Remarks:
-																		<b class="red">Microsoft Group of Company</b>
+																		<b class="red"><?php echo $_POST['cli_remarks'] ?></b>
 																	</li>
+																	<?php } ?>
 																</ul>
 															</div>
 														</div><!-- /span -->
@@ -218,7 +232,8 @@
 														<table class="table table-striped table-bordered">
 															<thead>
 																<tr>
-																	<th>Qty</th>
+																	<th class='center'>Qty</th>
+																	<th>Price per Unit</th>
 																	<th>Material</th>
 																	<th class="hidden-xs">Supplier</th>
 																	<th class="hidden-480">Item Code</th>
@@ -228,52 +243,53 @@
 
 															<tbody>
 																<?php 
-																	$total = "₱ 350,000.00";
-																	$materials = 
-																	array(
-																		0 => array(0 => "140", 1 => "4x4 Plywood", 2 => "Ace Hardware", 3 => "ply44", 4 => "200,000 PHP"),
-																		1 => array(0 => "140", 1 => "2x2 Plywood", 2 => "Ace Hardware", 3 => "ply22", 4 => "100,000 PHP"),
-																		2 => array(0 => "12", 1 => "Steel Hammer", 2 => "China Asian Supply", 3 => "stlmmr", 4 => "30,000 PHP"),
-																		3 => array(0 => "1", 1 => "Iron Jack Hammer", 2 => "China Asian Supply", 3 => "ijmmr", 4 => "20,000 PHP")
-																	);
-																	if($_POST['project_id'] == "52a52145925b20b26e7b23c8"){
-																		$total = "₱ 1,708,675.00";
-																		$materials = 
-																		array(
-																			0 => array(0 => "10", 1 => "Shingles", 2 => "China Asian Supply", 3 => "shng", 4 => "165,000 PHP"),
-																			1 => array(0 => "21", 1 => "Plywood Sheets", 2 => "Ace Hardware", 3 => "ply22", 4 => "143,675 PHP"),
-																			2 => array(0 => "164", 1 => "Gutter Downspouts", 2 => "China Asian Supply", 3 => "gutter", 4 => "1,000,000 PHP"),
-																			3 => array(0 => "500", 1 => "Chimney Sleeve", 2 => "China Asian Supply", 3 => "sleeve", 4 => "400,000 PHP")
-																		);
-																	}
-																	
-																	if($_POST['project_id'] == "52a51e2b925b2060577b23c9"){
-																		$total = "₱ 10,162,100.00";
-																		$materials = 
-																		array(
-																			0 => array(0 => "1000", 1 => "Concret Nails", 2 => "Ace Hardware", 3 => "nails", 4 => "100 PHP"),
-																			1 => array(0 => "17", 1 => "2 x 4 board", 2 => "Ace Hardware", 3 => "board24", 4 => "12,000 PHP"),
-																			2 => array(0 => "10", 1 => "Fire wall steel", 2 => "Ace Hardware", 3 => "wall", 4 => "10,000,000 PHP"),
-																			3 => array(0 => "550", 1 => "4 x 4 board", 2 => "Ace Hardware", 3 => "board44", 4 => "150,000 PHP")
-																		);
-																	}
-																	
-																	if($_POST['project_id'] == "1"){
-																		
-																	}
-																?>
-																
-																<?php 
-																	foreach($materials as $material => $id){
-																			echo "<tr>";
-																		foreach ($id as $key => $value) {
-																		
-																			echo "<td>{$value}</td>";
-														
+																	$materialsCollection = $dbmis->material;
+																	$suppliersCollection = $dbmis->supplier;
+																	$thisProject = $dbmis->project->find(array("project_id" => new MongoId($_POST['project_id'])));
+																	if ($thisProject->hasNext()) {
+																		$projectMaterials = $thisProject->getNext();
+																		$allTotalPrice = 0;
+																		for ($i=0; $i < count($projectMaterials['project_materials']) ; $i++) { 
+																			$materialid = new MongoId($projectMaterials['project_materials'][$i]['material_id']);
+																			$projectQty = $projectMaterials['project_materials'][$i]['quantity'];
+																			
+																			$material = $materialsCollection->find(array("material_id" => $materialid));
+																			if($material->hasNext()){
+																				$material = $material->getNext();
+
+																				echo "<tr>";
+																				//if($i == 0){
+																					echo "<td class='center'>". $projectQty ."</td>";
+																				//}/else{
+																					//echo "<td>". $projectQty ."</td>";
+																				//}
+																				$pricePerUnit = $material['price_of_quantity'] * 0.01;
+																				echo "<td class='priceperunit'>". $pricePerUnit ."</td>";
+
+																				//Qty	price per unit Material	Supplier	Item Code	Total
+																				echo "<td>".$material['name']."</td>";
+
+																				$supplier = $suppliersCollection->find(array("supplier_id" => new MongoId($material['supplier_id'])));
+																				if($supplier->hasNext()){
+																					$supplier = $supplier->getNext();
+																					echo "<td>".$supplier['name']."</td>";
+																				}else{
+																					echo "<td> - </td>";
+																				}
+
+																				echo "<td>".$material['material_code']."</td>";
+
+																				$totalPrice = $pricePerUnit * $projectQty;
+																				$allTotalPrice += $totalPrice;
+																				$lasttd = "<td class='totalperitem'";
+																				if($i + 1 == count($projectMaterials['project_materials'])){
+																					$lasttd .= "value='{$allTotalPrice}'";
+																				} 
+																				$lasttd .= "> {$totalPrice} </td>";
+																				echo $lasttd;
+																			}
 																		}
-																		echo "</tr>";
 																	}
-																	//die("end test");
 																?>
 															</tbody>
 														</table>
@@ -285,7 +301,7 @@
 														<div class="col-sm-5 pull-right">
 															<h4 class="pull-right">
 																Materials total cost :
-																<span class="red"><?php echo $total; ?></span>
+																<span class="red" id="totalCost"></span>
 															</h4>
 														</div>
 														<div class="col-sm-7 pull-left"> </div>
@@ -355,13 +371,13 @@
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function(){
-				jQuery("b#budget").currency({
+				jQuery("#totalCost").text(jQuery(".totalperitem:last").attr("value"));
+
+				jQuery("b#budget, .priceperunit, .totalperitem, #totalCost").currency({
 					region: 'PHP', // The 3 digit ISO code you want to display your currency in
 				    thousands: ',', // Thousands separator
 				    decimal: '.',   // Decimal separator
 				});
-			
-				jQuery("b#budget").currency();
 			});
 		</script>
 	</body>
