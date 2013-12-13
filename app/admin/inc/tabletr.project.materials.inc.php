@@ -12,12 +12,12 @@
 		</label>
 	</td>
 
-	<td>
+	<td class="<?php echo $materialExist["material_id"]; ?>">
 		<?php echo $materialExist["quantity"]; ?>
 	</td>
 	<td><?php echo $materialExist["name"]; ?></td>
 	<td class="hidden-480">
-		<select name="<?php echo $materialExist["material_code"]; ?>"  id="<?php echo $materialExist["material_id"]; ?>" class="materialqty">
+		<select class='itemQty' name="<?php echo $materialExist["material_code"]; ?>"  id="<?php echo $materialExist["material_id"]; ?>" class="materialqty">
 			<?php 
 				for ($i=0; $i <= 1000; $i++) { 
 					echo "<option value='".$i."'>".$i."</option>";

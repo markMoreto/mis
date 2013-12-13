@@ -590,7 +590,7 @@
 							}
 						},
 				        error: function(xhr, msg) {
-				     		alert("Something went wrong in AJAX call in creating material. Error Message: " + msg);
+				     		alert("Something went wrong in AJAX call in creating project. Error Message: " + msg);
 				        }
 					});				
 					
@@ -620,11 +620,64 @@
 					}
 				});
 
+				//check quantity
+
 				$('.materialschk').on('click' , function(){
 					var qty = this.value;
+					var that = this;
 					if($("#"+qty).val() === "0"){
 						alert("Please input Desire Quantity");
+					}else{
+						var data = {material_id: qty};
+						$.ajax({
+							url: 'inc/checkqty.inc.php',  //server script to process data
+							type: 'GET',
+							data: data,
+							success: function(msg) {
+								if(msg.length > 0){
+									jQuery("."+qty).text(msg);
+									var a = Number($("#"+qty).val());
+									var b = Number(msg);
+									//console.log("a:"+a+" b:"+b);
+									if(a > b){
+										alert("Sorry but your selected quantity is larger than what is in stocks.");
+										$("#"+qty).val("0");
+									}
+								}
+							},
+					        error: function(xhr, msg) {
+					     		alert("Something went wrong in AJAX call in checking qty of material. Error Message: " + msg);
+					        }
+						});		
 					}
+				});
+				
+				//check remaning stocks .change(forceNumeric).click(forceNumeric)
+				$('.itemQty').change(function(){
+					//debugger;
+					var qty = this.value;
+					var id = jQuery(this).attr("id");
+					var data = {material_id: id};
+						$.ajax({
+							url: 'inc/checkqty.inc.php',  //server script to process data
+							type: 'GET',
+							data: data,
+							success: function(msg) {
+								if(msg.length > 0){
+									jQuery("."+qty).text(msg);
+									var a = Number(qty);
+									var b = Number(msg);
+									//console.log("a:"+a+" b:"+b);
+									if(a > b){
+										alert("Sorry but your selected quantity is larger than what is in stocks.");
+										$("#"+id).val("0");
+									}
+								}
+							},
+					        error: function(xhr, msg) {
+					     		alert("Something went wrong in AJAX call in checking qty of material. Error Message: " + msg);
+					        }
+						});
 				});
 			
 				$('#validation-form').validate({
