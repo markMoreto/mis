@@ -13,7 +13,7 @@
 	</td>
 
 	<td>
-		<?php echo $materialExist["material_code"]; ?>
+		<?php echo $materialExist["quantity"]; ?>
 	</td>
 	<td><?php echo $materialExist["name"]; ?></td>
 	<td class="hidden-480">

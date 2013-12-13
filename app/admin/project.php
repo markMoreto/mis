@@ -240,7 +240,7 @@
 																							<span class="lbl"></span>
 																						</label>
 																					</th>
-																					<th>Item Code</th>
+																					<th>Remaining Stocks</th>
 																					<th>Item Name</th>
 																					<th class="hidden-480">Desire Quantity</th>
 																					<th>Supplier</th>
