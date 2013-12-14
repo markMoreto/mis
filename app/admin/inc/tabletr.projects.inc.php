@@ -14,17 +14,6 @@
 	<td>
 		<form action="print.projects.php" method="post" target="_blank">
 			<!-- hidden values of form fields here -->
-			<?php 
-			//TODO:
-			//Change budget format to pure digit for JS quantity price calc
-			//check material id
-			//
-				// $projectExist - project tb
-				// $profileResult - engineer profile 
-				// $profileResultcli - Client profile
-				// $timelineResult - timeline tb
-
-			?>
 			<input name="project_id" value="<?php echo  $projectExist['project_id']; ?>" class="hidden" />
 			<input name="project_budget" value="<?php echo  $projectExist['budget']; ?>" class="hidden" />
 			<input name="project_name" value="<?php echo  $projectExist['project_name']; ?>" class="hidden" />
@@ -39,8 +28,9 @@
 			<input name="timeline_start" value="<?php echo  $timelineResult["date_start"]; ?>" class="hidden" />
 			<input name="timeline_end" value="<?php echo  $timelineResult["date_end"]; ?>" class="hidden" />
 			<input name="project_team" value="<?php echo  $projectExist["team_id"]; ?>" class="hidden" />
+	
 			<!-- missing team -->
-			<button class="btn" type="submit">
+			<button class="btn btn-white" type="submit">
 				<i class="icon-print"></i>
 			</button>
 				<?php echo $projectExist["project_name"]; ?>
@@ -69,6 +59,10 @@
 
 			<a class="delete red" id="<?php echo $projectExist["project_id"]; ?>" table="project" col="project_id" match="<?php echo $projectExist["project_id"]; ?>">
 				<i class="icon-trash bigger-130"></i>
+			</a>
+			
+			<a class="blue" href="reports/?id=<?php echo  $timelineResult["timeline_id"]; ?>&project=<?php echo  $projectExist['project_name']; ?>" target="_blank">
+				<i class="icon-bar-chart bigger-130"></i>
 			</a>
 		</div>
 

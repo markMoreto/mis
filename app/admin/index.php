@@ -70,7 +70,7 @@
 													<?php 
 														/*
 														 * THIS CODE IS FOR EMPLOYEE
-														$query = array('ua_id' => $_SESSION['currentuser']);
+														$query = array('ua_id' => new MongoId($_SESSION['currentuser']));
 														$result = $dbconnection->mis->profile->find($query);
 													
 														while ( $result->hasNext() ){

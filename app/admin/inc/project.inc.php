@@ -15,12 +15,32 @@
 	//die(var_dump($_POST['materials']));
 	
 	$dbmis = $dbconnection->mis;
-	
-	//sanitation
-	 //foreach($_POST as $var){
-	//	strip_tags($var);
-	 //}
 	 
+	//update the inventory
+	$tbMATERIAL = $dbmis->material;
+	$tbINVENTORY = $dbmis->inventory;
+	$inventoryid = new MongoId();
+	for ($i=0; $i < count($_POST['materials']); $i++) { 
+		$get = $tbMATERIAL->find(array("material_id" => new MongoId($_POST['materials'][$i]['material_id'])));
+		if($get->hasNext()){
+			$result = $get->getNext();
+			$newQty = $result['quantity'] - $_POST['materials'][$i]['quantity'];
+			
+			$tbMATERIAL->update(
+				array("material_id" => new MongoId($_POST['materials'][$i]['material_id'])),
+				array(
+					'$set' => array("quantity" => $newQty)
+				));
+				
+			$tbINVENTORY->insert(array(
+			    "action"=> "out",
+				"date_stamp"=> date("Y-m-d H:m:i"),
+		  		"inventory_id"=> $inventoryid,
+		  		"material_id"=> new MongoId($_POST['materials'][$i]['material_id'])
+			));
+		}
+	}
+	
 	 
 	$tbtimeline = $dbmis->timeline;
 	$timelineid = new MongoId();
@@ -28,7 +48,7 @@
 	$tbtimeline->insert(array(
 	    "date_end"=> date("Y-m-d",strtotime($_POST['end'])),
 		"date_start"=> date("Y-m-d",strtotime($_POST['start'])),
-		"dates_in_between" => array(),
+		"dates_in_between" => $_POST['milestone'],
   		"remarks"=> "",
   		"timeline_id"=> $timelineid
 	));

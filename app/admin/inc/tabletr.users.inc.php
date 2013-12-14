@@ -63,7 +63,7 @@
 			</a>
 
 			<?php 
-				if ($accountExist["ua_id"] == "1") {
+				if ($accountExist["ua_id"] == $_SESSION['currentuser']) {
 					echo "Cannot delete yourself.";
 				} else {
 			?>

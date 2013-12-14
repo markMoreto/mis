@@ -579,5 +579,126 @@
 				});
 			})
 		</script>
+		
+		<?php
+			if(isset($_GET['edit'])){
+				$email = "";
+				$username = "";
+				$password = "";
+				$firstname = "";
+				$lastname = "";
+				$dob = "";
+				$mobile = "";
+				$address = "";
+				$sss = "";
+				$tin = "";
+				$status = "";
+				$gender = "";
+				$remarks = "";
+				$team = "";
+				$position = "";
+
+				$db = $dbconnection->mis;
+				$result = $db->profile->find(array('ua_id' => new MongoId($_GET['edit'])));
+				if ( $result->hasNext() ){
+					$profile = $result->getNext();
+					
+					/*
+					
+{
+  "date_added": "2013-12-12 23:12:40",
+  "material_code": "steel-wall",
+  "material_id": ObjectId("52aa349cf91dd85019000013"),
+  "name": "Steel Wall",
+  "price_of_quantity": "10000",
+  "quantity": "12",
+  "remarks": "",
+  "supplier_id": ObjectId("52aa349cf91dd85019000011")
+}
+					 */
+					//check ua table
+					$uaresult = $db->ua->find(array('ua_id' => $profile["ua_id"]));
+
+					if($uaresult->hasNext()){
+						$ua = $uaresult->getNext();
+
+						/*
+						
+						{
+{
+  "address": "Ayala Makati",
+  "name": "Asian China Supplies",
+  "supplier_id": ObjectId("52aa349cf91dd85019000011")
+}
+}
+		
+						 * 
+						 * 
+						 * 
+						 * 
+{
+  "action": "in",
+  "date_stamp": [
+    
+  ],
+  "inventory_id": "",
+  "material_id": ""
+}				 */
+						 
+						 
+						$email = $profile['email'];
+						$username = $ua['ua_user_name'];
+						$password = $ua['ua_password'];
+						$firstname = $profile['first_name'];
+						$lastname = $profile['last_name'];
+						$dob = $profile['birth_date'];
+						$mobile = $profile['contact_number'];
+						$address = $profile['address'];
+						$sss = $profile['gov_id']["sss"];
+						$tin = $profile['gov_id']["tin"];
+						$status = $profile['marital_status'];
+						$gender = $profile['gender'];
+						$remarks = $profile['remarks'];
+						$team = $profile['team_id'];
+						$position = $ua['ua_level'];
+					}
+				}	
+		?>
+			<script type="text/javascript">
+				//updates
+				jQuery(function($) {
+					$(".page-header small").html("<i class='icon-double-angle-right'></i> update your user");
+					$(".widget-header h4.lighter").text("Update your user");
+					$("div.widget-toolbar small.green b").text("Update User");
+					$("#hidemelater h3").text("Simply turn on the form to Update the User.");
+
+					$("#email").val("<?php echo $email; ?>"); 
+					$("#username").val("<?php echo $username; ?>");
+					$("#password").val("<?php echo $password; ?>");
+					$("#password2").val("<?php echo $password; ?>");
+					$("#fname").val("<?php echo $firstname; ?>");
+					$("#lname").val("<?php echo $lastname; ?>");
+					$("#dob").val("<?php echo $dob; ?>");
+					$("#phone").val("<?php echo $mobile; ?>");
+					$("#address").val("<?php echo $address; ?>");
+					$("#sss").val("<?php echo $sss; ?>");
+					$("#tin").val("<?php echo $tin; ?>");
+					$("#status").val("<?php echo $status; ?>");
+					$("input[name='gender']").each(function(){
+						var i = "<?php echo $gender; ?>";
+						if(this.value == i){
+							$(this).trigger("click");
+						}
+					});
+					$("#comment").val("<?php echo $remarks; ?>");
+					$("#team").val("<?php echo $team; ?>");
+					$("#level").val("<?php echo $position; ?>");
+
+					$("#username, #dob, input[name='gender']").attr("disabled","disabled");
+				})
+			</script>
+		<?php
+			}
+		?>
 	</body>
 </html>

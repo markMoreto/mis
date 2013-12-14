@@ -103,6 +103,7 @@
 													<br />
 													<span class="invoice-info-label">Date End:</span>
 													<span class="blue"><?php echo date("m/d/Y",strtotime($_POST['timeline_end'])); ?></span>
+													
 												</div>
 
 												<div class="widget-toolbar hidden-480">

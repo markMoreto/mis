@@ -136,6 +136,1995 @@
 																	</div>
 																</div>
 																
+																
+																
+																
+																<div class="space-2"></div>
+																
+																<div class="form-group" id="milestoneContainer">
+																	<div id="1" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>
+																	
+																	<div id="2" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>																		
+																	
+																	<div id="3" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="4" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="5" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="6" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="7" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="8" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="9" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="10" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="11" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="12" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="13" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="14" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="15" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="16" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="17" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="18" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="19" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="20" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="21" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="22" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="23" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="24" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="25" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="26" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="27" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="28" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="29" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																	
+																	<div id="30" class="hidden">
+																	<div class='form-group'>
+																	    <label class='control-label col-xs-12 col-sm-3 no-padding-right' for='name'></label>
+																	    <div class='col-xs-12 col-sm-4'>
+																	        <div class='widget-box'>
+																	            <div class='widget-header'>
+																	                <h4>Add new Milestone</h4>
+																	
+																	                <div class='widget-toolbar'>
+																	                    <a href='#' data-action='collapse'>
+																	                        <i class='icon-chevron-up'></i>
+																	                    </a>
+																	
+																	                    <a href='#' data-action='close'>
+																	                        <i class='icon-remove'></i>
+																	                    </a>
+																	                </div>
+																	            </div>
+																	
+																	            <div class='widget-body'>
+																	                <div class='widget-body-inner' style='display: block;'>
+																	                    <div class='widget-main'>
+																	                        <div>
+																	                            <label for='form-field-8'>Date Start in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                            	<input class='milestone_datestartinbetween date-picker' type='text' data-date-format='dd-mm-yyyy'>
+																	                            </div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                        	<label for='form-field-9'>Duration: ( Days )</label>
+																	                        	<div class="input-group">
+																										<input class='milestone_duration' type="text" />
+																								</div>
+																	                        </div>
+																	
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Due Date in Between:</label>
+																	                            <div class="input-group">
+																	                            	<span class="input-group-addon">
+																										<i class="icon-calendar"></i>
+																									</span>
+																	                        		<input class='milestone_duedateinbetween date-picker' type="text" data-date-format='dd-mm-yyyy' /> 
+																	                        	</div>  
+																	                        </div>
+																	                        
+																	                        <hr>
+																	                        <div>
+																	                            <label for='form-field-11'>Description:</label>
+																	                            <div class="input-group">
+																	                        			<textarea class='form-control milestone_remarks' id='form-field-8' placeholder='Put some words'></textarea>
+																	                        	</div>
+																	                        </div>
+																	                    </div>
+																	                </div>
+																	            </div>
+																	        </div>
+																	    </div>
+																	</div>
+																	</div>	
+																		
+																</div>																
+																<div class="space-2"></div>
+																
 																<div class="form-group">
 																	<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="name">Date End:</label>
 
@@ -489,6 +2478,13 @@
 			function forceNumeric() {
     			this.value = this.value.replace(/\D/g, '');
 			}
+			
+			function removeMe(e){
+				var id = $(e).attr("id");
+				//console.log(id);
+				$("div#"+id).remove();
+				return false;
+			}
 
 			//user tables
 			jQuery(function($) {
@@ -561,9 +2557,36 @@
 						tmp = materials[i].value;
 						materialsWithQty.push({"material_id": tmp, "quantity": $("#"+tmp).val()});
 					}
-
-					//console.log(materialsWithQty);
 					
+					var milestones = [];
+					var m_start = $(".milestone_datestartinbetween");
+					var m_end = $(".milestone_duedateinbetween");
+					var m_duration = $(".milestone_duration");
+					var m_remarks = $(".milestone_remarks");
+					var len = m_start.length;
+					
+					for(var i=0,j=len; i<j; i++){
+					  if($.trim(m_start[i].value) != ""){
+					  	a = m_start[i].value;
+					  		for(var i=0,j=len; i<j; i++){
+					  			if($.trim(m_end[i].value) != ""){
+					  				b = m_end[i].value;
+					  					for(var i=0,j=len; i<j; i++){
+					  						if($.trim(m_duration[i].value) != ""){
+					  							c = m_duration[i].value;
+					  								for(var i=0,j=len; i<j; i++){
+					  									if($.trim(m_remarks[i].value) != ""){
+					  										milestones.push({m_start: a, m_end: b, m_duration: c, m_remarks: m_remarks[i].value});
+					  									}
+					  								}
+					  						}
+					  					}
+					  			}
+					  		}
+					  }
+					};
+					
+					//console.log(milestones);
 				
 					var data = {
 						name: $("#name").val(),
@@ -576,10 +2599,12 @@
 						engr: $("#engr").val(),
 						cli: $("#cli").val(),
 						materials: materialsWithQty,
+						milestone: milestones,
 						comment: $("#comment").val()
 					};
 					
 					//debugger;
+					
 					$.ajax({
 						url: 'inc/project.inc.php',  //server script to process data
 						type: 'POST',
@@ -606,8 +2631,15 @@
 				}).on('stepclick', function(e){
 					//return false;//prevent clicking on steps
 				});
-			
-			
+				
+				//create milestonestyle="
+				var i = 1;
+				//$("#milestoneContainer .form-group:first-child").hide();
+				$('#start').on('click', function(){
+					$("div#"+i).removeAttr("class").show();
+					i = i + 1;
+				});
+				
 				$('#skip-validation').removeAttr('check-+c ed').on('click', function(){
 					$validation = this.checked;
 					if(this.checked) {

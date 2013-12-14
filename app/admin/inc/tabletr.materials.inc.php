@@ -37,7 +37,7 @@
 		<?php if(!isset($_GET['print'])){ ?>
 	<td>
 		<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-			<a class="green" href="#">
+			<a class="green" href="material.php?user=1&page=materials&edit=<?php echo $materialExist["material_id"]; ?>">
 				<i class="icon-pencil bigger-130"></i>
 			</a>
 
