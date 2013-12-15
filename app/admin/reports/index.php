@@ -21,9 +21,25 @@
 		$result = $get->getNext();
 		
 		$milestones = $result['dates_in_between'];
-		$project_start = date("d-m-Y", strtotime($result['date_start']));
-		$project_end = date("d-m-Y", strtotime($result['date_end']));
-		$durationStart = date_diff($project_start, $project_end);
+		//$project_start = date("d-m-Y", strtotime($result['date_start']));
+		//$project_end = date("d-m-Y", strtotime($result['date_end']));
+		$date1 = $result['date_start'];
+		$date2 = $result['date_end'];
+		
+		$diff = abs(strtotime($date2) - strtotime($date1));
+		//die($date1 . " - " . $date2);
+		$years = floor($diff / (365*60*60*24));
+		$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+		$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+		
+		$yearsday = $years * 365;
+		$monthsday = $months * 30;
+		
+		
+		$durationStart = $days + $yearsday + $monthsday;
+		
+		//die($durationStart);
+		//$durationStart = date_diff($project_start, $project_end);
 		//$durationStart = $durationStart / 86400;
 	}else{
 		die("passed id was not found.");
