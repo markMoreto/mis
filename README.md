@@ -1,4 +1,4 @@
-MIS System for students for thesis (On - Progress Development)
+MIS System for students school thesis (unfinished) - no more development
 
 Ingredients:
 
